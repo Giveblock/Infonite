@@ -36,13 +36,13 @@ public class WhatsApp {
     public static void sendMsg(String message, String number) {
         OkHttpClient client = new OkHttpClient();
         RequestBody body = new FormBody.Builder()
-                .add("token", "vkx9lbzlhdurqfxs")
+                .add("token", "token")
                 .add("to", "1" + number)
                 .add("body", message)
                 .build();
 
         Request request = new Request.Builder()
-                .url("https://api.ultramsg.com/instance64141/messages/chat")
+                .url("WhatsApp Instance Link")
                 .post(body)
                 .addHeader("content-type", "application/x-www-form-urlencoded")
                 .build();
@@ -61,13 +61,13 @@ public class WhatsApp {
         //120363193782265040@g.us
         OkHttpClient client = new OkHttpClient();
         RequestBody body = new FormBody.Builder()
-                .add("token", "vkx9lbzlhdurqfxs")
-                .add("to", "120363193782265040@g.us")
+                .add("token", "token")
+                .add("to", "Instance Address")
                 .add("body", message)
                 .build();
 
         Request request = new Request.Builder()
-                .url("https://api.ultramsg.com/instance64141/messages/chat")
+                .url("WhatsApp Instance Link")
                 .post(body)
                 .addHeader("content-type", "application/x-www-form-urlencoded")
                 .build();
